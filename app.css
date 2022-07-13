@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 150, 150);
+
+}
+
+.text {
+    height: 60vh;
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+
+}
