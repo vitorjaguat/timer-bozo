@@ -1,4 +1,6 @@
-setInterval(function () {
+
+
+const timerF = function () {
     const fimBozo = new Date(2023, 1, 1);
     // console.log(fimBozo)
     const now = new Date();
@@ -16,4 +18,25 @@ setInterval(function () {
     const timer = `Faltam ${timerDays} dias, \n${timerHours} horas, \n${timerMinutes} minutos e \n${timerSeconds} segundos \npara o fim do governo Bolsonaro.`
 
     document.querySelector('.text').innerText = timer;
-}, 1000)
+
+    return timerDays;
+}
+
+timerF();
+setInterval(timerF, 1000)
+
+const dayColor = function () {
+    const fimBozo = new Date(2023, 1, 1);
+    // console.log(fimBozo)
+    const now = new Date();
+
+    const second = 1000
+    const minute = second * 60
+    const hour = minute * 60
+    const day = hour * 24;
+
+    const distance = fimBozo - now;
+    return Math.floor(distance / day);
+}
+
+document.body.style.backgroundColor = `rgb(255,${dayColor()},${dayColor()})`; 
