@@ -15,7 +15,7 @@ const timerF = function () {
     const timerHours = Math.floor(distance % day / hour);
     const timerMinutes = Math.floor(distance % hour / minute);
     const timerSeconds = Math.floor(distance % minute / second)
-    const timer = `Faltam ${timerDays} dias, \n${timerHours} horas, \n${timerMinutes} minutos e \n${timerSeconds} segundos \npara o fim do governo Bolsonaro.`
+    const timer = `Faltam ${timerDays} dias, \n${timerHours} ${timerHours === 1 ? 'hora' : 'horas'}, \n${timerMinutes} ${timerMinutes === 1 ? 'minuto' : 'minutos'} e \n${timerSeconds} ${timerSeconds === 1 ? 'segundo' : 'segundos'} \npara o fim do governo Bolsonaro.`
 
     document.querySelector('.text').innerText = timer;
 
