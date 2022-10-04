@@ -3,7 +3,7 @@
 const timerF = function () {
     const fimBozo = new Date(2023, 1, 1);
     // console.log(fimBozo)
-    console.log(fimBozo.getDate())
+    // console.log(fimBozo.getDate())
     const now = new Date();
 
     const second = 1000
@@ -13,7 +13,7 @@ const timerF = function () {
 
     const distance = fimBozo - now;
     const timerDays = Math.floor((distance / day) - 31);
-    console.log(distance/day)
+    // console.log(distance/day)
     const timerHours = Math.floor(distance % day / hour);
     const timerMinutes = Math.floor(distance % hour / minute);
     const timerSeconds = Math.floor(distance % minute / second)
