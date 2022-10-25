@@ -4,12 +4,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* background-color: rgb(255, 83, 83); */
 
 }
 
 .text {
-    height: 60vh;
+    /* height: 60vh; */
     width: 55vw;
     display: flex;
     justify-content: center;
@@ -17,5 +18,19 @@ body {
     font-size: 3vh;
     color: red;
     font-family: 'Georgia', 'Cambria', 'Times New Roman';
+}
 
+nav {
+    margin: 10px 10px auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav button {
+    border: 0;
+    border-radius: 3px;
+    background-color: red;
+    padding: 3px 5px;
+    margin: 2px;
+    color: rgb(187, 89, 89);
 }
